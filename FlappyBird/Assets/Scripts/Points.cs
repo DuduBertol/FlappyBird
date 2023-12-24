@@ -6,16 +6,16 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class Points : MonoBehaviour
 {
-    public GameController gameController;
+    public GameManager gameManager;
 
     private void Start() 
     {
-        gameController = FindObjectOfType<GameController>();    
+        gameManager = FindObjectOfType<GameManager>();    
     }
 
     private void OnTriggerEnter2D(Collider2D collider) 
     {
-        gameController.score++;        
-        gameController.scoreText.text = gameController.score.ToString();
+        gameManager.score++;        
+        gameManager.scoreText.text = gameManager.score.ToString();
     }
 }
