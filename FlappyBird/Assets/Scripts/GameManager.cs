@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
         skinPanel.SetActive(false);
     }
 
-
+#region DESABILITADO
     //POR HORA, DESABILITADO
     //public bool isGamePaused;
     //[SerializeField] GameObject pausePanel;
@@ -77,6 +77,6 @@ public class GameManager : MonoBehaviour
         pausePanel.SetActive(false);
     }
 */
-
+#endregion
     
 }
